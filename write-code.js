@@ -105,16 +105,21 @@ isPangram("abcdefghijklmnopqrstuvwxyz0123456789")
 
 console.log("=======================")
 
-// const findLongestWord = {
+const findLongestWord = (arr) => {
+    let longestStr = ''
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].length > longestStr.length) {
+            longestStr = arr[i]
+        }
+    } return console.log(longestStr, "is", longestStr.length, "characters long")
+}
 
-// }
-
-// // RUNTIME IS = 
-// // Space complexity is = 
+// RUNTIME IS = O(n)
+// Space complexity is = O(1)
 
 
 
-// findLongestWord(["hi", "hello"]);
-// // -> 5
+findLongestWord(["hi", "hello", 'dog', 'alphabet', 'Chevrolet', 'car', 'Johnny', 'Bob']);
+// -> 5
 
 console.log("=======================")
