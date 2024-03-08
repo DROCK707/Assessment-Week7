@@ -104,6 +104,8 @@ isPangram("abcdefghijklmnopqrstuvwxyz0123456789")
 
 
 console.log("=======================")
+console.log("Is Longest word results")
+
 
 const findLongestWord = (arr) => {
     let longestStr = ''
